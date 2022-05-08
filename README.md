@@ -9,11 +9,11 @@ The purpose of this analysis is to review the number of employees who are eligib
 
 1. I started by creating a table that held all of the employees who were born between 01/01/1952 and 12/31/1955 to determine which employees could potentially retire. Due to some employees switching titles over the years, there were duplicate entires for some employees. 
 
-![retirement_titles]()
+![retirement_titles](https://github.com/ericajini/Pewlett-Hackard-Analysis/blob/main/retirement_titles.png)
 
 2. To solve for this I created a new table using the "DISTINCT ON" statement so that I could pull the first occurence of each employee number. I also added a filter to remove all employees that already left the company. This way we were left with an accurate number of employees that could retire. 
 
-![unique_titles]()
+![unique_titles](https://github.com/ericajini/Pewlett-Hackard-Analysis/blob/main/unique_titles.png)
 
 3. After this, I created a new table using the data from the table created in step 2 to group the potential retirees by title to see which positions would be impacted the most. This should give insight into immediate hiring needs and the areas in the most danger of being understaffed. 
 
@@ -34,15 +34,15 @@ When excluding duplicate employee numbers and only including current employees, 
 
 With there being 1,549 eligible employees for the mentorship program and there being 72,458 potential retires, I would say there are enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees. It would heavily depend on when the employees retired, but for every 47 potential mentors, there is only 1 employee eligible for the mentorship program. 
 
-![mentorship_eligibility_vs_retirees]()
+![mentorship_eligibility_vs_retirees](https://github.com/ericajini/Pewlett-Hackard-Analysis/blob/main/mentorship_eligibility_vs_retiring.png)
 
 
 With that said, I created a couple of additional queries that will help provide more insight. 
 
 The first one was to group the number of eligible active employees by title so that it's easier to understand how many employees there are for each of those spaces. This also made it easier to directly compare this to the number of potential retirees grouped by title. 
 
-![mentorship_eligibility_vs_retirees]()
+![mentorship_eligibility_vs_retirees](https://github.com/ericajini/Pewlett-Hackard-Analysis/blob/main/mentorship_titles.png)
 
 I also created an additional query to see what extended the range of birthdates would do to the number of employees eligible for the mentorship program,. By just changing the eligibility from 01/01/1965 to 12/31/1965, to 01/01/1963 to 12/31/1965, the number of eligible employees shot up from 1,549 to 38,401. Though the company may not want to extend the range this much, it may be something to consider depending on how many mentors the company wants to have available. Of course if a lot of people retire at one time, this would require more new hires that could be eligible for the mentorship program, but I still think it would be worth it to expand the range so that the company is not losing people to retirement that they may want to keep around to help their company grow.  
 
-![mentorship_eligibility_vs_retirees]()
+![mentorship_eligibility_vs_retirees](https://github.com/ericajini/Pewlett-Hackard-Analysis/blob/main/comparing%20extended%20mentorship%20vs%20potential%20retiring.png)
