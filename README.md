@@ -17,11 +17,11 @@ The purpose of this analysis is to review the number of employees who are eligib
 
 3. After this, I created a new table using the data from the table created in step 2 to group the potential retirees by title to see which positions would be impacted the most. This should give insight into immediate hiring needs and the areas in the most danger of being understaffed. 
 
-![retiring_titles]()
+![retiring_titles](https://github.com/ericajini/Pewlett-Hackard-Analysis/blob/main/retiring_titles.png)
 
 4. Finally I created a table to house the data for the active employees that are also eligible for the mentorship program. To be eligible, the employees birth date just needed to be between 01/01/1965 and 12/31/1965. 
 
-![mentorship_eligibility]()
+![mentorship_eligibility](https://github.com/ericajini/Pewlett-Hackard-Analysis/blob/main/mentorship_eligibility.png)
 
 ## Summary
 
