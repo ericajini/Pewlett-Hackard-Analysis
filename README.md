@@ -3,7 +3,7 @@
 
 ## Overview: 
 
-The purpose of this analysis is to review the number of employees who are eligible to retire per title at Pewlett-Hackard. The company is also looking to introduce a mentorship program where some of the qualified retirees could participate to help the new-hires succeed. 
+The purpose of this analysis is to review the number of employees who are eligible to retire per title at Pewlett-Hackard. The company is also looking to introduce a mentorship program where some of the qualified retirees could participate working part time to help the new-hires succeed. 
 
 ## Results: 
 
