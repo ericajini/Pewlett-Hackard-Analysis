@@ -123,3 +123,24 @@ ORDER BY COUNT(title) DESC;
 
 
 SELECT * FROM mentorship_titles
+
+-- mentorship eligibility extended by 2 years to include anyone born from 1963-1965 instead of just anyone born in 1965
+SELECT DISTINCT ON (e.emp_no) e.emp_no,
+    e.first_name,
+    e.last_name,
+	e.birth_date,
+	de.from_date,
+	de.to_date,
+	ti.title
+
+INTO mentorship_eligibility_extended
+FROM employees as e 
+INNER JOIN dept_emp as de
+ON de.emp_no = e.emp_no
+INNER JOIN titles as ti
+ON ti.emp_no = e.emp_no
+
+WHERE 1=1 
+AND birth_date BETWEEN '1963-01-01' AND '1965-12-31'
+AND de.to_date = '9999-01-01'
+
