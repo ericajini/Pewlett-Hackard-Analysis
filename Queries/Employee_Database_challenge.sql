@@ -110,3 +110,16 @@ AND de.to_date = '9999-01-01'
 
 SELECT * FROM mentorship_eligibility
 
+
+
+
+-- mentorship titles table = how many employees eligible for mentorship program by title\
+SELECT COUNT(me.emp_no), 
+			 me.title
+INTO mentorship_titles
+FROM mentorship_eligibility as me
+GROUP BY title
+ORDER BY COUNT(title) DESC;
+
+
+SELECT * FROM mentorship_titles
